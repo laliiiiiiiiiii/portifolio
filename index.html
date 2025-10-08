@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BT">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extrator de Palavras-Chave</title>
+    <title>Painel de Análise Interna</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>Extrator de palavras-chave</h1>
-        <textarea id="entrada-de-texto" placeholder="Digite ou cole seu texto aqui..."></textarea>
-        <button id="botao-palavrachave">Extrair</button>
-        <div id="resultado-palavrachave"></div>
-    </div>
-    <script src="script.js"></script>
-</body>
 
+<div class="container">
+    <h1>Dashboard de Análise de Feedback de Clientes</h1>
+    <p>Insira o texto para identificar os termos mais críticos e relevantes:</p>
+    <textarea id="textoEntrada" placeholder="Insira o texto de feedback aqui..."></textarea>
+    <button onclick="extrairPalavrasChave()">Analisar e Extrair Palavras-Chave</button>
+
+    <div id="resultados">
+        <h2>Top 10 Palavras-Chave (Relevância)</h2>
+        <p id="listaChaves">Nenhum texto analisado ainda.</p>
+    </div>
+</div>
+
+<script src="palavrasRuins.js"></script> 
+<script src="script.js"></script>
+
+</body>
 </html>
